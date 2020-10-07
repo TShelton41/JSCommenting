@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Commenting</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        padding: 40px;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        margin-bottom: 16px;
+      }
+      pre {
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #222;
+        color: #fff;
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JS Doc Commenting</h1>
+    <p>This will show you how to comment JS Code.</p>
+    <p>
+      Great tutorial site.
+      <a href="https://www.valentinog.com/blog/jsdoc/" target="_blank"
+        >https://www.valentinog.com/blog/jsdoc/</a
+      >. The NPM reps is located here.
+      <a href="https://www.npmjs.com/package/jsdoc"
+        >https://www.npmjs.com/package/jsdoc</a
+      >
+    </p>
+
+    <h3>Install JSDocs Locally</h3>
+    <pre>npm install --save-dev jsdoc</pre>
+
+    <h3>Install JSDocs Globally</h3>
+    <pre>npm -g install jsdoc</pre>
+
+    <h3>Run JSDocs if installed Globally</h3>
+    <p>
+      This is the command if you are running locally. This also changes the
+      destination folder to docs. It will also grab two different js files and
+      compile them.
+    </p>
+
+    <pre>jsdoc -d docs app/app.js app/table.js</pre>
+
+    <h3>Run JSDocs if installed Locally</h3>
+    <p>
+      This is the command if you are running locally. This also changes the
+      destination folder to docs. It will also grab two different js files and
+      compile them.
+    </p>
+    <pre>node_modules/jsdoc/jsdoc.js -d docs app/app.js app/table.js</pre>
+
+    <h3>The Output</h3>
+    <p>
+      Click <a href="docs/index.html" target="_blank">here</a> to see the
+      output.
+    </p>
+
+    <script src="app/app.js"></script>
+  </body>
+</html>
